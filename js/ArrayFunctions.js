@@ -1,6 +1,6 @@
 export function length(array) {
     let i = 0;
-    for (e of array) {
+    for (let e of array) {
         i++;
     }
     return i;
