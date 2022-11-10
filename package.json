@@ -5,8 +5,9 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "test": "jest --watchall --coverage",
-        "lint": "eslint"
+        "test": "jest --watchAll --coverage",
+        "lint": "eslint",
+        "test:prod": "jest --watchAll --coverage --watchAll=false"
     },
     "author": "",
     "license": "ISC",
