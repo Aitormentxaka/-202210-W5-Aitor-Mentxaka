@@ -124,7 +124,7 @@ export function reduce(array) {
     return acumulado;
 }
 
-function concat(array1, array2) {
+export function concat(array1, array2) {
     let nuevoArray = [];
     nuevoArray = array1;
     for (let i = 0; i < length(array2); i++) {
@@ -134,7 +134,7 @@ function concat(array1, array2) {
     return nuevoArray;
 }
 
-function lastIndexOff(array, prueba) {
+export function lastIndexOff(array, prueba) {
     for (let i = length(array1); i > 0; i--) {
         if (prueba(array[i])) {
             return i;
@@ -143,7 +143,7 @@ function lastIndexOff(array, prueba) {
     return -1;
 }
 
-function join(array, caracter = ",") {
+export function join(array, caracter = ",") {
     let string = "";
     for (let i = 0; i < length(array) - 1; i++) {
         string = string + array[i] + caracter;
